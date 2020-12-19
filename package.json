@@ -7,7 +7,7 @@
     "generate:routes": "tsoa spec",
     "generate:spec": "tsoa routes",
     "build": "tsoa spec-and-routes && tsc",
-    "dev": "concurrently \"nodemon\" \"nodemon -x tsoa spec-and-routes\"",
+    "dev": "tsoa routes && concurrently \"nodemon\" \"nodemon -x tsoa spec-and-routes --watch src/api/**\"",
     "prod": "node build/server.js"
   },
   "dependencies": {
