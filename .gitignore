@@ -186,3 +186,4 @@ $RECYCLE.BIN/
 
 
 build/*
+src/routes.ts
